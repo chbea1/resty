@@ -1,0 +1,191 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"path": "appengine/cloudsql",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Ps2Bsd1OjhSmAv4uVA2ZIZx7w7k=",
+			"path": "github.com/fatih/structs",
+			"revision": "878a968ab22548362a09bdb3322f98b00f470d46",
+			"revisionTime": "2018-10-10T23:17:57Z"
+		},
+		{
+			"checksumSHA1": "YImPVNZRCKOaaReWnFEH+AaP8NM=",
+			"path": "github.com/fsnotify/fsnotify",
+			"revision": "1485a34d5d5723fea214f5710708e19a831720e4",
+			"revisionTime": "2019-03-12T18:14:46Z"
+		},
+		{
+			"checksumSHA1": "lzmcN7XLcvdGqxXeystYp0HtQ+8=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "89ec2a9ec85e27afb0f0fcd3c2399e72cc360ae4",
+			"revisionTime": "2019-04-04T13:56:37Z"
+		},
+		{
+			"checksumSHA1": "bWGI7DqWg6IdhfamV96OD+Esa+8=",
+			"path": "github.com/hashicorp/hcl",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "XQmjDva9JCGGkIecOgwtBEMCJhU=",
+			"path": "github.com/hashicorp/hcl/hcl/ast",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "1GmX7G0Pgf5XprOh+T3zXMXX0dc=",
+			"path": "github.com/hashicorp/hcl/hcl/parser",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "encY+ZtDf4nJaMvsVL2c+EJ2r3Q=",
+			"path": "github.com/hashicorp/hcl/hcl/printer",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "+qJTCxhkwC7r+VZlPlZz8S74KmU=",
+			"path": "github.com/hashicorp/hcl/hcl/scanner",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "oS3SCN9Wd6D8/LG0Yx1fu84a7gI=",
+			"path": "github.com/hashicorp/hcl/hcl/strconv",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "c6yprzj06ASwCo18TtbbNNBHljA=",
+			"path": "github.com/hashicorp/hcl/hcl/token",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "PwlfXt7mFS8UYzWxOK5DOq0yxS0=",
+			"path": "github.com/hashicorp/hcl/json/parser",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "afrZ8VmAwfTdDAYVgNSXbxa4GsA=",
+			"path": "github.com/hashicorp/hcl/json/scanner",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "fNlXQCQEnb+B3k5UDL/r15xtSJY=",
+			"path": "github.com/hashicorp/hcl/json/token",
+			"revision": "65a6292f0157eff210d03ed1bf6c59b190b8b906",
+			"revisionTime": "2018-09-06T18:38:39Z"
+		},
+		{
+			"checksumSHA1": "40vJyUB4ezQSn/NSadsKEOrudMc=",
+			"path": "github.com/inconshreveable/mousetrap",
+			"revision": "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75",
+			"revisionTime": "2014-10-17T20:07:13Z"
+		},
+		{
+			"checksumSHA1": "9CxtAyVNPsScpfghpxfapxMPniU=",
+			"path": "github.com/magiconair/properties",
+			"revision": "7757cc9fdb852f7579b24170bcacda2c7471bb6a",
+			"revisionTime": "2019-01-10T14:24:58Z"
+		},
+		{
+			"checksumSHA1": "7zLQC+jG19ndjH24FVh/+ZliHac=",
+			"path": "github.com/mitchellh/go-homedir",
+			"revision": "af06845cf3004701891bf4fdb884bfe4920b3727",
+			"revisionTime": "2019-01-27T04:21:35Z"
+		},
+		{
+			"checksumSHA1": "J+g0oZePWp2zSIISD2dZZKTxmgg=",
+			"path": "github.com/mitchellh/mapstructure",
+			"revision": "3536a929edddb9a5b34bd6861dc4a9647cb459fe",
+			"revisionTime": "2018-10-05T04:51:35Z"
+		},
+		{
+			"checksumSHA1": "HsxrgSHJbYcfi4QmByYj2vz5Kq8=",
+			"path": "github.com/pelletier/go-toml",
+			"revision": "63909f0a90ab0f36909e8e044e46ace10cf13ba2",
+			"revisionTime": "2019-04-02T16:47:51Z"
+		},
+		{
+			"checksumSHA1": "2d0rR/VhqllUdrcH6kwHHrhqJ2E=",
+			"path": "github.com/spf13/afero",
+			"revision": "588a75ec4f32903aa5e39a2619ba6a4631e28424",
+			"revisionTime": "2019-03-02T02:18:57Z"
+		},
+		{
+			"checksumSHA1": "HcOjO9+cwl+xYnkiGuIeesqwBs8=",
+			"path": "github.com/spf13/afero/mem",
+			"revision": "588a75ec4f32903aa5e39a2619ba6a4631e28424",
+			"revisionTime": "2019-03-02T02:18:57Z"
+		},
+		{
+			"checksumSHA1": "So+ok+Fp2ztieiuZXD/wp8UJhS0=",
+			"path": "github.com/spf13/cast",
+			"revision": "8c9545af88b134710ab1cd196795e7f2388358d7",
+			"revisionTime": "2018-10-24T22:49:29Z"
+		},
+		{
+			"checksumSHA1": "8fDK53Czr6IWx6KyeYfCptNeCjE=",
+			"path": "github.com/spf13/cobra",
+			"revision": "67fc4837d267bc9bfd6e47f77783fcc3dffc68de",
+			"revisionTime": "2019-03-21T00:05:52Z"
+		},
+		{
+			"checksumSHA1": "kmcWtDErtMPA3+o7+B4MDC3z+T0=",
+			"path": "github.com/spf13/jwalterweatherman",
+			"revision": "94f6ae3ed3bceceafa716478c5fbf8d29ca601a1",
+			"revisionTime": "2018-10-28T14:53:47Z"
+		},
+		{
+			"checksumSHA1": "VK+UsykzUMkaKl2ankiyutolraE=",
+			"path": "github.com/spf13/pflag",
+			"revision": "24fa6976df40757dce6aea913e7b81ade90530e1",
+			"revisionTime": "2018-12-23T18:29:23Z"
+		},
+		{
+			"checksumSHA1": "mGaLF55OVIclCIgdqoiY8eew80A=",
+			"path": "github.com/spf13/viper",
+			"revision": "fccfc2c271a59647debe6c5802362469a3700f0a",
+			"revisionTime": "2019-02-22T18:54:48Z"
+		},
+		{
+			"checksumSHA1": "h7T+YPjgH20kHOKUibYbCxdXHxs=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "81d4e9dc473e5e8c933f2aaeba2a3d81efb9aed2",
+			"revisionTime": "2019-04-03T07:41:39Z"
+		},
+		{
+			"checksumSHA1": "o3YChxWLvyCmkAn/ZNBj9HC9zKw=",
+			"path": "golang.org/x/text/transform",
+			"revision": "e3703dcdd614d2d7488fff034c75c551ea25da95",
+			"revisionTime": "2018-12-15T16:57:46Z"
+		},
+		{
+			"checksumSHA1": "vAScJLvb0ucuuclyN9vmJUyWTBA=",
+			"path": "golang.org/x/text/unicode/norm",
+			"revision": "e3703dcdd614d2d7488fff034c75c551ea25da95",
+			"revisionTime": "2018-12-15T16:57:46Z"
+		},
+		{
+			"checksumSHA1": "LiyXfqOzaeQ8vgYZH3t2hUEdVTw=",
+			"path": "google.golang.org/appengine/cloudsql",
+			"revision": "54a98f90d1c46b7731eb8fb305d2a321c30ef610",
+			"revisionTime": "2019-02-15T20:43:44Z"
+		},
+		{
+			"checksumSHA1": "QqDq2x8XOU7IoOR98Cx1eiV5QY8=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
+			"revisionTime": "2018-11-15T11:05:04Z"
+		}
+	],
+	"rootPath": "github.com/chbea1/resty"
+}
