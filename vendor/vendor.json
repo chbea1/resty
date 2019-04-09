@@ -7,6 +7,48 @@
 			"revision": ""
 		},
 		{
+			"checksumSHA1": "beSB1Ar0rxQAR8gnm7YGwSvLtlw=",
+			"path": "github.com/NYTimes/openapi2proto",
+			"revision": "96cd4a9269a4749a493cef472578de974ada6380",
+			"revisionTime": "2019-04-01T21:03:35Z"
+		},
+		{
+			"checksumSHA1": "dv2IpZEmecwSOXZVTEMKjj6T6kA=",
+			"path": "github.com/NYTimes/openapi2proto/cmd/openapi2proto",
+			"revision": "96cd4a9269a4749a493cef472578de974ada6380",
+			"revisionTime": "2019-04-01T21:03:35Z"
+		},
+		{
+			"checksumSHA1": "DxvbKOIrckxRMvO96Qav1sab3a0=",
+			"path": "github.com/NYTimes/openapi2proto/compiler",
+			"revision": "96cd4a9269a4749a493cef472578de974ada6380",
+			"revisionTime": "2019-04-01T21:03:35Z"
+		},
+		{
+			"checksumSHA1": "8yQ6EBLwP+08ig1SDJvU455B6Jk=",
+			"path": "github.com/NYTimes/openapi2proto/internal/option",
+			"revision": "96cd4a9269a4749a493cef472578de974ada6380",
+			"revisionTime": "2019-04-01T21:03:35Z"
+		},
+		{
+			"checksumSHA1": "RnBQtDL7FyBw/lh8D1H5KJS6N+g=",
+			"path": "github.com/NYTimes/openapi2proto/openapi",
+			"revision": "96cd4a9269a4749a493cef472578de974ada6380",
+			"revisionTime": "2019-04-01T21:03:35Z"
+		},
+		{
+			"checksumSHA1": "R5XiUledAliIJOaxMzHV9Uea5xA=",
+			"path": "github.com/NYTimes/openapi2proto/protobuf",
+			"revision": "96cd4a9269a4749a493cef472578de974ada6380",
+			"revisionTime": "2019-04-01T21:03:35Z"
+		},
+		{
+			"checksumSHA1": "GY9avfKOvANdZ0ynlylaFGKfwW0=",
+			"path": "github.com/dolmen-go/jsonptr",
+			"revision": "a830c2c3c0fef87e53a948fac44cfc298e261d94",
+			"revisionTime": "2019-02-27T18:11:51Z"
+		},
+		{
 			"checksumSHA1": "Ps2Bsd1OjhSmAv4uVA2ZIZx7w7k=",
 			"path": "github.com/fatih/structs",
 			"revision": "878a968ab22548362a09bdb3322f98b00f470d46",
@@ -115,6 +157,12 @@
 			"revisionTime": "2019-04-02T16:47:51Z"
 		},
 		{
+			"checksumSHA1": "I7hloldMJZTqUx6hbVDp5nk9fZQ=",
+			"path": "github.com/pkg/errors",
+			"revision": "27936f6d90f9c8e1145f11ed52ffffbfdb9e0af7",
+			"revisionTime": "2019-02-27T00:00:51Z"
+		},
+		{
 			"checksumSHA1": "2d0rR/VhqllUdrcH6kwHHrhqJ2E=",
 			"path": "github.com/spf13/afero",
 			"revision": "588a75ec4f32903aa5e39a2619ba6a4631e28424",
@@ -155,6 +203,12 @@
 			"path": "github.com/spf13/viper",
 			"revision": "fccfc2c271a59647debe6c5802362469a3700f0a",
 			"revisionTime": "2019-02-22T18:54:48Z"
+		},
+		{
+			"checksumSHA1": "qqkJ3LVuZhbMU+k64RV+gwIhXF4=",
+			"path": "github.com/superwhiskers/yaml",
+			"revision": "bec87e4332aede01fb63a4ab299d8af28480cd96",
+			"revisionTime": "2014-09-22T21:32:25Z"
 		},
 		{
 			"checksumSHA1": "h7T+YPjgH20kHOKUibYbCxdXHxs=",

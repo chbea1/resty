@@ -3,64 +3,122 @@ package crud
 import (
 	"fmt"
 
-	"github.com/chbea1/resty/app/data"
+	"github.com/chbea1/resty/app/mysqlspec"
 )
 
-type Request interface{}
-type ApiPath interface {
-	path() string
+// type Request interface{}
+// type ApiPath interface {
+// 	path() string
+// }
+
+type ApiPath struct {
+	Get GetRequest `json:"/get,omitempty"`
 }
 
-// Read - The openAPI documentation for a Read operation.
-type Read struct {
-	Get GetRequest `json:"get" yaml:"get"`
-}
-
-func (r *Read) path() string {
-	return "/get"
-}
-
-// GetRequest - The openAPI documentation for a GET request.
 type GetRequest struct {
-	Description string          `json:"description" yaml:"description"`
-	Parameters  *[]APIParameter `json:"parameters" yaml:"parameters"`
+	Get GetRequestBody `json:"get,omitempty"`
 }
 
-// APIParameter - The openAPI documentation for a API parameter
+type GetRequestBody struct {
+	Tags        []string       `json:"tags,omitempty"`
+	Summary     string         `json:"summary,omitempty"`
+	Description string         `json:"description,omitempty"`
+	OperationID string         `json:"operationId,omitempty"`
+	Produces    []string       `json:"produces,omitempty"`
+	Parameters  []APIParameter `json:"parameters,omitempty"`
+	Responses   ApiResponses   `json:"responses,omitempty"`
+}
+
+type ApiResponses struct {
+	Num200 ApiResponse `json:"200,omitempty"`
+}
+
+type ApiResponse struct {
+	Description string `json:"description,omitempty"`
+}
+
 type APIParameter struct {
-	Name        string             `json:"name" yaml:"name"`
-	In          string             `json:"in" yaml:"in"`
-	Description string             `json:"description" yaml:"description"`
-	Schema      APIParameterSchema `json:"schema" yaml:"schema"`
+	Name        string `json:"name,omitempty"`
+	In          string `json:"in,omitempty"`
+	Description string `json:"description,omitempty"`
+	Required    bool   `json:"required,omitempty"`
+	Type        string `json:"type,omitempty"`
+	Items       Items  `json:"items,omitempty"`
 }
 
-// APIParameterSchema - The openAPI documentation for an API parameter schema.
-type APIParameterSchema struct {
-	Type    string       `json:"type" yaml:"type"`
-	Example *interface{} `json:"example" yaml:"example"`
+type Items struct {
+	Type    string `json:"type,omitempty"`
+	Default string `json:"default,omitempty"`
 }
 
 // CreateReadFromTableSchema - Creates an openAPI documentation READ object from a table schema.
-func CreateReadFromTableSchema(schema data.TableSchema) *Read {
+func CreateReadFromTableSchema(schema mysqlspec.MysqlTableSchema) *ApiPath {
 	var parameters []APIParameter
 	for _, row := range *schema.Fields {
 		parameter := APIParameter{
 			Name:        row.Field,
-			In:          "Query",
+			In:          "query",
 			Description: fmt.Sprintf("Parameter restricts the result based on '%s'", row.Field),
-			Schema: APIParameterSchema{
-				Type:    row.Type,
-				Example: nil,
+			Required:    true,
+			Type:        "string",
+			Items: Items{
+				Type:    "string",
+				Default: "string",
 			},
 		}
 		parameters = append(parameters, parameter)
 	}
 	request := GetRequest{
-		Description: "Get the requested data from the database",
-		Parameters:  &parameters,
+		Get: GetRequestBody{
+			Summary:     "Get the requested data from the database",
+			OperationID: "get",
+			Produces:    []string{"application/json"},
+			Tags:        []string{"get"},
+			Description: "Get the requested data from the database",
+			Parameters:  parameters,
+			Responses: ApiResponses{
+				Num200: ApiResponse{
+					Description: "Successful get",
+				},
+			},
+		},
 	}
 
-	read := Read{Get: request}
+	read := ApiPath{Get: request}
 
 	return &read
 }
+
+// "paths": {
+//    "get": {
+//       "get": {
+//          "tags": [
+//             "pet"
+//          ],
+//          "summary": "Finds Pets by status",
+//          "description": "endpoint dec",
+//          "operationId": "findPetsByStatus",
+//          "produces": [
+//             "application/json"
+//          ],
+//          "parameters": [
+//             {
+//                "name": "status",
+//                "in": "query",
+//                "description": "Status values that need to be considered for filter",
+//                "required": true,
+//                "type": "array",
+//                "items": {
+//                   "type": "string",
+//                   "default": "available"
+//                }
+//             }
+//          ],
+//          "responses": {
+//             "200": {
+//                "description": "Invalid status value"
+//             }
+//          }
+//       }
+//    }
+// }
